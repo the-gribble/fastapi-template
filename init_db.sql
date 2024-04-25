@@ -33,12 +33,3 @@ COMMENT ON COLUMN contacts.mobile IS 'Contact''s personal mobile number';
 COMMENT ON COLUMN contacts.email IS 'Contact''s personal email address';
 -- Comment on the "address" column
 COMMENT ON COLUMN contacts.address IS 'Contact''s current home address';
-
-
---------------------------
--- Create a new user with a password and the LOGIN privilege
-CREATE ROLE sa_ahs_db WITH LOGIN PASSWORD 'Password123#';
--- Grant all privileges to the new user on a specific database
-GRANT ALL PRIVILEGES ON DATABASE mydatabase TO sa_ahs_db;
--- Change the owner of the database to the new user
-ALTER DATABASE mydatabase OWNER TO sa_ahs_db;
