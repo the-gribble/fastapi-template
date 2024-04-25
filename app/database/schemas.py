@@ -23,10 +23,10 @@ class ContactSchema(Base):
     __tablename__ = "contacts"
 
     id = Column(BigInteger, Identity(start=1, always=True), primary_key=True, index=True)
-    name = Column(String, index=True)
-    mobile = Column(String)
+    full_name = Column(String, index=True)
+    mobile_no = Column(String)
     email = Column(String)
-    address = Column(String)
+    current_address = Column(String)
 
 # print(str(CreateTable(ContactSchema.__table__)))  # Display the generated SQL
 

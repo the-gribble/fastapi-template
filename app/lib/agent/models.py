@@ -2,7 +2,7 @@ from pydantic import BaseModel
 
 class ContactModel(BaseModel):
     id: int
-    name: str
+    full_name: str
     mobile_no: str
     email: str
     current_address: str

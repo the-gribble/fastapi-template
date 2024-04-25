@@ -1,10 +1,10 @@
 
 CREATE TABLE contacts (
 	id BIGINT GENERATED ALWAYS AS IDENTITY (START WITH 1), 
-	name VARCHAR, 
-	mobile VARCHAR, 
+	full_name VARCHAR, 
+	mobile_no VARCHAR, 
 	email VARCHAR, 
-	address VARCHAR, 
+	current_address VARCHAR, 
 	PRIMARY KEY (id)
 )
 

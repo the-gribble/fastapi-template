@@ -10,7 +10,7 @@ from .database.database import get_db
 # from .database.models import UserType
 from .database.user.crud import get_user_by_username
 
-SECRET_KEY = "h3b2rioj32bhi23briho2b3ohrb2ohi32broib" # just entered random chars when commiting to GitHub
+SECRET_KEY = "4e6f9fba2b3720d2b7653a49c9a4fbe931abb072945c4d3d875b9a3e4f38b9b7"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 20160 # 14 days
 
